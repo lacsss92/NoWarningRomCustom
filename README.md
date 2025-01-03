@@ -9,10 +9,10 @@ Delete Warning messages on boot with custom ROM on S10e
   
 $ adb shell  
 adb> $ su  
-adb> # dd if=/dev/block/platform/13d60000.ufs/by-name/up_param of=/sdcard/Download/up_param.bin #extract the u_param  
+adb> # dd if=/dev/block/platform/13d60000.ufs/by-name/up_param of=/sdcard/Download/up_param.bin #extract the up_param  
 adb> # exit  
 adb> $ exit  
-$ adb pull /sdcard/Download/up_param.bin /home/debian/Bureau/ #send u_param file from smartphone to your vm  
+$ adb pull /sdcard/Download/up_param.bin /home/debian/Bureau/ #send up_param file from smartphone to your vm  
 $ adb pull /sdcard/Documents/up_param.bin /home/debian/Bureau/ #backup to prevent any problem  
   
 --------------
